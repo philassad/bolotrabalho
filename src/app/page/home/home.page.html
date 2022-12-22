@@ -1,0 +1,53 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="warning" mode="ios">
+    <ion-title>
+      Bolos do Phil 
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-img [src]="image"></ion-img>  
+  
+    <ion-list >      
+      <ion-item-sliding  *ngFor="let produto of listaProdutos">
+
+        
+      <ion-item (click)="actionMetod(produto)">
+        <!--Bolinha Branca-->
+        <ion-icon name="radio-button-off" *ngIf="!produto.status"></ion-icon>
+        <ion-label *ngIf="!produto.status"><strong>{{produto.produto}}</strong></ion-label>
+
+        <!--Bolinha Verde-->
+        <ion-icon name="checkmark-circle" color="success" *ngIf="produto.status"></ion-icon>
+        
+        <ion-label *ngIf="produto.status"><del><strong> {{produto.produto}} </strong></del></ion-label>
+        <ion-thumbnail slot="start">
+          <img [src]="produto.imagem"/>
+        </ion-thumbnail>
+      </ion-item>
+
+      <ion-item-options>
+        
+        <ion-item-option  color="danger" (click)="deletar(produto.id)">
+          <ion-icon name="trash-outline"></ion-icon>          
+        </ion-item-option>
+        
+        <ion-item-option  color="success" [routerLink]="['/form',produto.id]">
+          <ion-icon name="refresh-outline"></ion-icon>
+        </ion-item-option>
+
+      </ion-item-options>
+
+      </ion-item-sliding>
+
+    </ion-list>
+  
+    <!--Botão Flutuante-->
+   <!--  <ion-fab horizontal="end" vertical="bottom">
+      <ion-fab-button (click)="alertando()">
+        <ion-icon name="add-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-fab> -->
+    
+</ion-content>

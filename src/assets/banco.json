@@ -1,0 +1,31 @@
+{
+  "lista": [
+    {
+      "produto": "Bolo de goiaba",
+      "quantidade": "15",
+      "ingredientes": "Goiaba e bolo",
+      "preparo": "Compre bolo e goiaba",
+      "imagem": "https://img.cybercook.com.br/receitas/357/bolo-de-goiaba-no-liquidificador-1.jpeg",
+      "id": 5,
+      "status": false
+    },
+    {
+      "produto": "Bolo de Chocolate ",
+      "ingredientes": "4 ovos 4 colheres (sopa) de chocolate em pó 2 colheres (sopa) de manteiga 3 xícaras (chá) de farinha de trigo 2 xícaras (chá) de açúcar 2 colheres (sopa) de fermento 1 xícara (chá) de leite",
+      "preparo": "Em um liquidificador adicione os ovos, o chocolate em pó, a manteiga, a farinha de trigo, o açúcar e o leite, depois bata por 5 minutos.  Adicione o fermento e misture com uma espátula delicadamente.  Em uma forma untada, despeje a massa e asse em forno médio (180 ºC) preaquecido por cerca de 40 minutos. Não se esqueça de usar uma forma alta para essa receita: como leva duas colheres de fermento, ela cresce bastante! Outra solução pode ser colocar apenas uma colher de fermento e manter a sua receita em uma forma pequena.",
+      "quantidade": "10",
+      "imagem": "https://bing.com/th?id=OSK.3ea1f65124e594d7e84686e852a1a61a",
+      "status": false,
+      "id": 6
+    },
+    {
+      "produto": "Bolo de Morango",
+      "ingredientes": "ngredientes para 1 receita, você vai precisar de 2, assadas separadamente para um bolo grande 6 ovos 1 xícara de chá de água 2 xícaras de chá de açúcar 2 xícaras de chá de farinha 1 colher de sobremesa de fermento Royal ",
+      "preparo": "Bata os ovos inteiros na batedeira com a água por 5 minutos. Sem parar de bater acrescente o açúcar e a farinha. Por último o fermento, bata só para misturar. Asse em forma retangular grande, untada e enfarinhada, em forno médio, pré-aquecido, por aproximadamente 40 minutos, ou até dourar. Faça mais uma massa.",
+      "quantidade": "30",
+      "imagem": "https://bing.com/th?id=OSK.4e4c30f46dca453313fb9ce2a33b0ca4",
+      "status": false,
+      "id": 7
+    }
+  ]
+}

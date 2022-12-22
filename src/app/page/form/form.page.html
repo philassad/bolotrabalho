@@ -1,0 +1,53 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="warning" mode="ios">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Booleando
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <form #form="ngForm" (ngSubmit)="update(form)">
+
+    <ion-card>
+      <img [src]="produto.imagem" />
+      <ion-card-header>
+        <ion-card-title>{{produto.produto}}</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        <ion-label><strong>Nome do Bolo:</strong></ion-label>
+        <ion-input type="text" name="produto" [ngModel]="produto.produto"></ion-input>
+      </ion-card-content>
+
+      <ion-card-content>
+        <ion-label><strong>Quantidade:</strong></ion-label>
+        <ion-input type="text" name="quantidade" [ngModel]="produto.quantidade"></ion-input>
+      </ion-card-content>
+      
+      <ion-card-content>
+        <ion-label><strong>Ingredientes:</strong></ion-label>
+        <ion-textarea arrow="4" type="text" name="ingredientes" [ngModel]="produto.ingredientes"></ion-textarea>
+      </ion-card-content>
+      
+      <ion-card-content>
+        <ion-label><strong>Preparo:</strong></ion-label>
+        <ion-textarea arrow="4" type="text" name="preparo" [ngModel]="produto.preparo"></ion-textarea>
+      </ion-card-content>
+      
+      <ion-card-content>
+        <ion-label><strong>Imagem Nova:</strong></ion-label>
+        <ion-textarea type="text" name="imagem" [ngModel]="produto.imagem"></ion-textarea>
+      </ion-card-content>
+
+      
+      <ion-button type="submit" color="success" expand="block">Atualizar</ion-button>
+
+    </ion-card>
+    </form>
+
+</ion-content>

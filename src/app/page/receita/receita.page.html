@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="warning" mode="ios">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Booleando  
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-card>
+    <img [src]="produto.imagem"/>
+    <ion-card-header>
+      <ion-card-title>{{produto.produto}}</ion-card-title>
+      <ion-card-subtitle><strong>Quantidade:</strong> Serve {{produto.quantidade}}</ion-card-subtitle>
+      <ion-card-subtitle><strong>Ingredientes:</strong> {{produto.ingredientes}}</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content><strong>Preparo:</strong> {{produto.preparo}}</ion-card-content>
+    
+  </ion-card>
+
+
+  
+  
+  
+
+</ion-content>
